@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Mini_projet_1</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <div id="Affscore"> </div>
+        <h1>QCM JavaScript</h1>
+        <fieldset>
+            <legend>Instructions</legend>
+            <ul>
+                <li>Ce QCM contient 10 questions.</li>
+                <li>Vous avez le droit de passer une minute sur chaque question.</li>
+                <li>Cliquer sur afficher à coté de la question à laquelle vous voulez répondre.</li>
+                <li>Cliquer sur confirmer qui va s'afficher si vou voulez confirmer votre reponse avant la fin du minuteur.</li>
+                <li>À la fin du QCM vous aurez votre score sur 10 en haut de la page. Vous douvez cliquer sur score pour afficher le score.</li>
+                <li>le score ne s'affichera que si toutes les reponse sont confirmées ou le minuteur a fini.</li>
+                <li>Pour chaque réponse correcte, 1 point est attribué. En cas de réponse incorrecte, 0 point est attribué.</li>
+                <li>Vous trouverez une explication pour la réponse correcte au dessous de chaque question . </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>QCM</legend>
+            <div class="Quest" id="quest1">
+                <div class="hide">
+                    <p>Question 1</p>
+                    <div class="timer"><span id="timer1">60</span>s</div>
+                    <button class="Aff" id="Aff1" onclick="Afficher('Aff1')">Afficher</button>
+                    <button class="Conf" id="Conf1" onclick="Confirmer('Conf1')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix1">
+                    <p>Quelle est la sortie de console.log([] + {}); ?</p>
+                    <div><input type="checkbox"> [object Object]<br>
+                    <input type="checkbox"> {}<br>
+                    <input type="checkbox"> undefined<br>
+                    <input type="checkbox"> NaN</div>
+                </div>
+                <div class="expli" id="expli1">
+                    En JavaScript, lorsqu'un tableau vide [] est ajouté à un objet vide {}, le tableau est converti en chaîne de caractères vide et l'objet est converti en [object Object].
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest2">
+                <div class="hide">
+                    <p>Question 2</p>
+                    <div class="timer"><span id="timer2">60</span>s</div>
+                    <button class="Aff" id="Aff2" onclick="Afficher('Aff2')">Afficher</button>
+                    <button class="Conf" id="Conf2" onclick="Confirmer('Conf2')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix2">
+                    <p>Quelle est la différence principale entre == et === en JavaScript ?</p>
+                    <div><input type="checkbox"> == compare les valeurs, === compare les valeurs et les types <br>
+                    <input type="checkbox"> == compare les types, === compare les valeurs<br>
+                    <input type="checkbox"> == compare les références, === compare les valeurs<br>
+                    <input type="checkbox"> == compare les valeurs et les types, === compare les références</div>
+                </div>
+                <div class="expli" id="expli2">
+                   == effectue une comparaison de valeurs après conversion de type, tandis que === compare à la fois les valeurs et les types sans conversion.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest3">
+                <div class="hide">
+                    <p>Question 3</p>
+                    <div class="timer"><span id="timer3">60</span>s</div>
+                    <button class="Aff" id="Aff3" onclick="Afficher('Aff3')">Afficher</button>
+                    <button class="Conf" id="Conf3" onclick="Confirmer('Conf3')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix3">
+                    <p>Quelle est la sortie de console.log('5' - 3);?</p>
+                    <div><input type="checkbox"> 2<br>
+                    <input type="checkbox"> 8<br>
+                    <input type="checkbox"> NaN<br>
+                    <input type="checkbox"> undefined</div>
+                </div>
+                <div class="expli" id="expli3">
+                     En JavaScript, l'opérateur - convertit la chaîne '5' en nombre avant de faire la soustraction, donc '5' - 3 donne 2.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest4">
+                <div class="hide">
+                    <p>Question 4</p>
+                    <div class="timer"><span id="timer4">60</span>s</div>
+                    <button class="Aff" id="Aff4" onclick="Afficher('Aff4')">Afficher</button>
+                    <button class="Conf" id="Conf4" onclick="Confirmer('Conf4')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix4">
+                    <p>Comment pouvez-vous créer un objet immuable en JavaScript ?</p>
+                    <div><input type="checkbox"> Object.freeze()<br>
+                    <input type="checkbox"> Object.seal()<br>
+                    <input type="checkbox"> Object.preventExtensions()<br>
+                    <input type="checkbox"> Object.lock()</div>
+                </div>
+                <div class="expli" id="expli4">
+                    Object.freeze() empêche toute modification des propriétés d'un objet, le rendant immuable.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest5">
+                <div class="hide">
+                    <p>Question 5</p>
+                    <div class="timer"><span id="timer5">60</span>s</div>
+                    <button class="Aff" id="Aff5" onclick="Afficher('Aff5')">Afficher</button>
+                    <button class="Conf" id="Conf5" onclick="Confirmer('Conf5')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix5">
+                    <p>Quelle est la sortie de console.log(0.1 + 0.2 === 0.3); ?</p>
+                    <div><input type="checkbox"> true<br>
+                    <input type="checkbox"> false<br>
+                    <input type="checkbox"> undefined<br>
+                    <input type="checkbox"> NaN</div>
+                </div>
+                <div class="expli" id="expli5">
+                    En raison des imprécisions de l'arithmétique en virgule flottante, 0.1 + 0.2 ne donne pas exactement 0.3, donc l'expression est false.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest6">
+                <div class="hide">
+                    <p>Question 6</p>
+                    <div class="timer"><span id="timer6">60</span>s</div>
+                    <button class="Aff" id="Aff6" onclick="Afficher('Aff6')">Afficher</button>
+                    <button class="Conf" id="Conf6" onclick="Confirmer('Conf6')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix6">
+                    <p>Quelle est la sortie de console.log(typeof null); ?</p>
+                    <div><input type="checkbox"> null<br>
+                    <input type="checkbox"> undefined<br>
+                    <input type="checkbox"> object<br>
+                    <input type="checkbox"> NaN</div>
+                </div>
+                <div class="expli" id="expli6">
+                    En JavaScript, null est considéré comme un objet en raison d'un bug historique dans le langage.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest7">
+                <div class="hide">
+                    <p>Question 7</p>
+                    <div class="timer"><span id="timer7">60</span>s</div>
+                    <button class="Aff" id="Aff7" onclick="Afficher('Aff7')">Afficher</button>
+                    <button class="Conf" id="Conf7" onclick="Confirmer('Conf7')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix7">
+                    <p>Quelle est la différence entre call() et apply() en JavaScript ?</p>
+                    <div><input type="checkbox"> call() accepte une liste d'arguments, apply() accepte un tableau d'arguments<br>
+                    <input type="checkbox"> call() accepte un tableau d'arguments, apply() accepte une liste d'arguments<br>
+                    <input type="checkbox"> call() et apply() sont identiques<br>
+                    <input type="checkbox"> call() est utilisé pour les objets, apply() pour les fonctions</div>
+                </div>
+                <div class="expli" id="expli7">
+                    call() et apply() sont utilisés pour appeler une fonction avec un this spécifique, mais call() prend des arguments séparés par des virgules, tandis que apply() prend un tableau d'arguments.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest8">
+                <div class="hide">
+                    <p>Question 8</p>
+                    <div class="timer"><span id="timer8">60</span>s</div>
+                    <button class="Aff" id="Aff8" onclick="Afficher('Aff8')">Afficher</button>
+                    <button class="Conf" id="Conf8" onclick="Confirmer('Conf8')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix8">
+                    <p>Quelle est la sortie de console.log([1, 2, 3].map(num => num * 2)); ?</p>
+                    <div><input type="checkbox"> [2,4,6]<br>
+                    <input type="checkbox"> [1,2,3,4,5,6]<br>
+                    <input type="checkbox"> [1,4,9]<br>
+                    <input type="checkbox"> [2,3,4]</div>
+                </div>
+                <div class="expli" id="expli8">
+                    La méthode map() applique la fonction donnée à chaque élément du tableau, donc [1, 2, 3].map(num => num * 2) donne [2, 4, 6].
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest9">
+                <div class="hide">
+                    <p>Question 9</p>
+                    <div class="timer"><span id="timer9">60</span>s</div>
+                    <button class="Aff" id="Aff9" onclick="Afficher('Aff9')">Afficher</button>
+                    <button class="Conf" id="Conf9" onclick="Confirmer('Conf9')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix9">
+                    <p>Quelle est la sortie de console.log('JavaScript'.substring(4, 10)); ?</p>
+                    <div><input type="checkbox"> Script<br>
+                    <input type="checkbox"> Java<br>
+                    <input type="checkbox"> JavaScript<br>
+                    <input type="checkbox"> avaScr</div>
+                </div>
+                <div class="expli" id="expli9">
+                    La méthode substring() extrait les caractères de l'index 4 à l'index 10 (non inclus), donc 'JavaScript'.substring(4, 10) donne Script.
+                </div>
+            </div>
+            
+            <div class="Quest" id="quest0">
+                <div class="hide">
+                    <p>Question 10</p>
+                    <div class="timer"><span id="timer0">60</span>s</div>
+                    <button class="Aff" id="Aff0" onclick="Afficher('Aff0')">Afficher</button>
+                    <button class="Conf" id="Conf0" onclick="Confirmer('Conf0')">Confirmer</button>
+                </div>
+                <div class="choix" id="choix0">
+                    <p>Quelle est la sortie de console.log(1 + '1' - 1); ?</p>
+                    <div><input type="checkbox"> 10<br>
+                    <input type="checkbox"> 11<br>
+                    <input type="checkbox"> 0<br>
+                    <input type="checkbox"> 1</div>
+                </div>
+                <div class="expli" id="expli0">
+                    En JavaScript, 1 + '1' donne '11' (concaténation), puis '11' - 1 donne 10 (conversion de '11' en nombre).
+                </div>
+            </div>
+          <button id="score" onclick="Score()">Score!</button>
+        </fieldset>
+    </body>
+</html>

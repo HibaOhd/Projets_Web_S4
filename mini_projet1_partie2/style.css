@@ -1,0 +1,7 @@
+h1{color:#222222;text-align:center;}
+.form,.QuizDiv{border-radius: 5px;color:white;background-color: #222222;margin:10px;padding:10PX;display:flex;flex-direction:column;}
+.form div,button{margin:10px;}
+.form input,.form select{width:100%;height:30px;border-radius:5px;}
+button{font-size: larger;}
+.QuizDiv{display: none;}
+#scoreAff{text-align:center;background-color: bisque;font-size: larger;display: none;}

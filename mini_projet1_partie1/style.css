@@ -1,0 +1,17 @@
+body{background-color: rgb(216, 215, 215);}
+h1{color:rgb(3, 4, 74);text-align: center;}
+legend{font-size: x-large;color: rgb(87, 16, 16);background-color:rgb(216, 215, 215);border-radius:10px;border-bottom:2px solid rgb(3, 4, 74);}
+fieldset { border: 2px solid rgb(3, 4, 74); border-radius: 10px; padding: 10px;background-color: white;}
+.choix{display: None;}
+.expli{display: None;}
+.Quest{display:flex;flex-direction:column;border: 1px solid rgb(3, 4, 74);margin: 10px;}
+.hide{display:flex;flex-direction:row;justify-content: space-around;font-size: larger;color:rgb(3, 4, 74);align-items: center;}
+.hide button{font-size: larger;background-color:rgb(3, 4, 74);color: white;}
+.Conf{display: none;}
+.timer{border: 1px solid rgb(3, 4, 74);color:rgb(87, 16, 16);padding:5px;}
+.choix{border-radius:5px;margin:5px;background-color: rgb(216, 215, 215) ;padding:5px }
+.choix p{font-weight: bold;}
+.choix div{padding:10px;padding-top:0px}
+#score{margin:10px;background-color:rgb(3, 4, 74);color: white;font-size: larger;}
+#Affscore{background-color: white;color:rgb(87, 16, 16);margin:10px;text-align: center;font-size: larger;}
+.expli{border-radius: 5px;margin:5px;padding:5px;background-color:rgb(216, 215, 215);color:green;}
