@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mini_projet3</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <H1>Gestionnaire taches hebdomadaire</H1>
+        <div>Heure actuelle : <span id="clock"></span></div>
+        <audio id="clickSound" src="mixkit-bubble-pop-up-alert-notification-2357.wav"></audio>
+        <div class="todos">
+            <ul>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="23" name="Hours">
+                    <span> : </span>
+                    <input type="number" min="0" max="59" name="Minutes">
+                    <input type="text" value="Commencer la revision">
+                    <button onclick="del(this)">-</button>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="23" name="Hours">
+                    <span> : </span>
+                    <input type="number" min="0" max="59" name="Minutes">
+                    <input type="text" value="Prendre une pause">
+                    <button onclick="del(this)">-</button>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="23" name="Hours">
+                    <span> : </span>
+                    <input type="number" min="0" max="59">
+                    <input type="text" value="Reprendre la revision" name="Minutes">
+                    <button onclick="del(this)">-</button>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <input type="number" min="0" max="23" name="Hours">
+                    <span> : </span>
+                    <input type="number" min="0" max="59" name="Minutes">
+                    <input type="text" value="Regarder un fil">
+                    <button onclick="del(this)">-</button>
+                </li>
+            </ul>
+            <button onclick="add()">+</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
