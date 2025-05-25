@@ -37,6 +37,7 @@
       <button type="submit">Publier</button>
     </form>
   </div>
+  <!--test-->
 </template>
 
 <script>
@@ -124,4 +125,5 @@ select {
 button {
   margin-top: 10px;
 }
+
 </style>
