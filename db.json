@@ -1,0 +1,343 @@
+{
+  "users": [
+    {
+      "id": "userID_1",
+      "email": "utilisateur1@example.com",
+      "username": "utilisateur1",
+      "fullName": "Utilisateur Un",
+      "photoURL": "url_de_la_photo_de_profil"
+    },
+    {
+      "id": "userID_2",
+      "email": "utilisateur2@example.com",
+      "username": "utilisateur2",
+      "fullName": "Utilisateur Deux",
+      "photoURL": "url_de_la_photo_de_profil"
+    },
+    {
+      "id": "userID_1748191568225",
+      "fullName": "Hiba Ouhmad",
+      "email": "Hiba.ouhamd@gmail.com",
+      "username": "safkjg",
+      "photoURL": "jshf",
+      "regime": "Omnivore"
+    },
+    {
+      "id": "userID_1748192736490",
+      "fullName": "hIAB",
+      "email": "hibaouhmad12@gmail.com",
+      "username": "hIAB",
+      "photoURL": "KJSAB",
+      "regime": "Végétalien",
+      "admin": true
+    }
+  ],
+  "recipes": [
+    {
+      "id": "recipeID_1",
+      "nom": "Saumon Rôti aux Asperges Rôties",
+      "description": "Un plat délicieux et nutritif, facile à préparer",
+      "ingredients": [
+        {
+          "nom": "Filets de saumon",
+          "quantité": 450,
+          "unité": "g"
+        },
+        {
+          "nom": "Asperges vertes",
+          "quantité": 250,
+          "unité": "g"
+        },
+        {
+          "nom": "Huile d'olive",
+          "quantité": "2 cuillères à soupe",
+          "unité": ""
+        },
+        {
+          "nom": "Sel et poivre",
+          "quantité": "au goût",
+          "unité": ""
+        },
+        {
+          "nom": "Citron, en jus",
+          "quantité": "1/2",
+          "unité": "unité"
+        }
+      ],
+      "instructions": [
+        "Préchauffer le four à 200°C.",
+        "Sécher les filets de saumon avec du papier absorbant et les assaisonner de sel, de poivre et d'herbes fraîches (facultatif).",
+        "Disposer les filets de saumon sur une plaque de cuisson tapissée de papier sulfurisé.",
+        "Laver et sécher les asperges vertes.",
+        "Couper les extrémités dures des asperges et les enrober d'huile d'olive.",
+        "Disposer les asperges autour des filets de saumon.",
+        "Enfourner pendant 15-20 minutes, ou jusqu'à ce que le saumon soit cuit et que les asperges soient tendres.",
+        "Servir immédiatement avec un jus de citron pressé."
+      ],
+      "temps_preparation": 10,
+      "temps_cuisson": 20,
+      "regime": "Omnivore",
+      "portions": 2,
+      "tags": [
+        "facile",
+        "rapide",
+        "santé",
+        "poisson"
+      ],
+      "image": "https://example.com/baked_salmon_asparagus.jpg",
+      "authorID": "userID_1",
+      "nbrComments": 1
+    },
+    {
+      "id": "recipeID_2",
+      "nom": "Buddha Bowl Végétalien",
+      "description": "Un bol coloré et équilibré rempli de légumes, légumineuses et céréales complètes.",
+      "ingredients": [
+        {
+          "nom": "Quinoa cuit",
+          "quantité": 100,
+          "unité": "g"
+        },
+        {
+          "nom": "Pois chiches rôtis",
+          "quantité": 100,
+          "unité": "g"
+        },
+        {
+          "nom": "Avocat tranché",
+          "quantité": 1,
+          "unité": "unité"
+        },
+        {
+          "nom": "Carottes râpées",
+          "quantité": 50,
+          "unité": "g"
+        },
+        {
+          "nom": "Concombre en rondelles",
+          "quantité": 50,
+          "unité": "g"
+        },
+        {
+          "nom": "Chou rouge émincé",
+          "quantité": 50,
+          "unité": "g"
+        },
+        {
+          "nom": "Sauce tahini",
+          "quantité": "2 cuillères à soupe",
+          "unité": ""
+        },
+        {
+          "nom": "Graines de sésame",
+          "quantité": "1 cuillère à café",
+          "unité": ""
+        }
+      ],
+      "instructions": [
+        "Disposer le quinoa cuit au fond d’un bol.",
+        "Ajouter les pois chiches rôtis, l’avocat tranché, les carottes, le concombre et le chou rouge de manière décorative.",
+        "Arroser de sauce tahini.",
+        "Saupoudrer de graines de sésame.",
+        "Servir frais ou à température ambiante."
+      ],
+      "temps_preparation": 15,
+      "temps_cuisson": 10,
+      "regime": "Végétalien",
+      "portions": 2,
+      "tags": [
+        "végétalien",
+        "santé",
+        "rapide",
+        "bowl"
+      ],
+      "image": "https://example.com/buddha_bowl.jpg",
+      "authorID": "userID_2",
+      "nbrComments": 1
+    },
+    {
+      "id": "2629",
+      "nom": "test ets ",
+      "description": "test tes tste zzgu",
+      "temps_preparation": 4,
+      "temps_cuisson": 4,
+      "portions": 4,
+      "regime": "Végétalien",
+      "image": "jhfksf",
+      "ingredients": [
+        {
+          "nom": "xbbnb",
+          "quantité": "100",
+          "unité": "g"
+        }
+      ],
+      "instructions": [
+        "hdhdhhdhdhtestestt"
+      ],
+      "tags": [],
+      "authorID": "userID_1748192736490",
+      "nbrComments": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": "commentID_1",
+      "recipeID": "recipeID_1",
+      "userID": "userID_2",
+      "comment": "J'adore cette recette ! Facile à préparer et tellement délicieuse.",
+      "timestamp": "2024-06-05T12:00:00Z"
+    },
+    {
+      "id": "commentID_2",
+      "recipeID": "recipeID_2",
+      "userID": "userID_1",
+      "comment": "Cette salade est devenue un incontournable à la maison. Merci pour la recette !",
+      "timestamp": "2024-06-05T13:30:00Z"
+    },
+    {
+      "id": "1748193898767",
+      "recipeID": "recipeID_1",
+      "userID": "userID_1748192736490",
+      "comment": "c'est trees bon",
+      "timestamp": "2025-05-25T17:24:58.767Z"
+    },
+    {
+      "id": "1748195188950",
+      "recipeID": "2629",
+      "userID": "userID_1748192736490",
+      "comment": "test",
+      "timestamp": "2025-05-25T17:46:28.950Z"
+    },
+    {
+      "id": "1748195192535",
+      "recipeID": "2629",
+      "userID": "userID_1748192736490",
+      "comment": "test",
+      "timestamp": "2025-05-25T17:46:32.535Z"
+    },
+    {
+      "id": "1748195195134",
+      "recipeID": "2629",
+      "userID": "userID_1748192736490",
+      "comment": "test",
+      "timestamp": "2025-05-25T17:46:35.134Z"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Omnivore",
+      "description": "Consomme tous les types d'aliments, y compris viande, poisson, produits laitiers, œufs, légumes, fruits, céréales, noix, graines.",
+      "exampleFoods": [
+        "Viande",
+        "Poisson",
+        "Produits laitiers",
+        "Œufs",
+        "Fruits",
+        "Légumes"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/omnivore.png"
+    },
+    {
+      "name": "Végétarien",
+      "description": "Ne consomme pas de viande, volaille, poisson, fruits de mer.",
+      "exampleFoods": [
+        "Fruits",
+        "Légumes",
+        "Produits laitiers",
+        "Œufs"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/vegetarien.png"
+    },
+    {
+      "name": "Végétalien",
+      "description": "Un régime qui exclut tous les produits d'origine animale.",
+      "exampleFoods": [
+        "Fruits",
+        "Légumes",
+        "Légumineuses",
+        "Noix",
+        "Graines"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/vegetalien.png"
+    },
+    {
+      "name": "Pescétarien",
+      "description": "Consomme poisson et fruits de mer, ainsi que des aliments d'origine végétale. Ne consomme pas de viande et volaille.",
+      "exampleFoods": [
+        "Poisson",
+        "Fruits de mer",
+        "Légumes",
+        "Céréales"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/pescetarien.png"
+    },
+    {
+      "name": "Flexitarien",
+      "description": "Régime principalement végétarien, avec apports occasionnels de viande et poisson.",
+      "exampleFoods": [
+        "Légumes",
+        "Fruits",
+        "Viande (occasionnelle)",
+        "Poisson (occasionnel)"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/flexitarien.png"
+    },
+    {
+      "name": "Fruitarien",
+      "description": "Consomme principalement des fruits, parfois des noix et des graines. Évite souvent légumes et céréales.",
+      "exampleFoods": [
+        "Fruits",
+        "Noix",
+        "Graines"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/fruitarien.png"
+    },
+    {
+      "name": "Crudivore",
+      "description": "Consomme aliments crus ou cuits à basse température (<48°C). Peut être végétalien ou inclure des produits animaux crus.",
+      "exampleFoods": [
+        "Fruits crus",
+        "Légumes crus",
+        "Noix",
+        "Aliments crus d’origine animale"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/crudivore.png"
+    },
+    {
+      "name": "Paleo",
+      "description": "Consomme aliments disponibles à l'ère paléolithique. Évite produits laitiers, céréales, légumineuses, sucre raffiné.",
+      "exampleFoods": [
+        "Viande",
+        "Poisson",
+        "Fruits",
+        "Légumes",
+        "Noix"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/paleo.png"
+    },
+    {
+      "name": "Cétogène",
+      "description": "Très faible en glucides, riche en graisses, modéré en protéines. Évite aliments riches en glucides.",
+      "exampleFoods": [
+        "Avocats",
+        "Viande",
+        "Œufs",
+        "Fromage",
+        "Huile de coco"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/ketogene.png"
+    },
+    {
+      "name": "Sans gluten",
+      "description": "Exclut le gluten (protéine du blé, orge, seigle). Adapté aux personnes atteintes de la maladie cœliaque ou sensibles au gluten.",
+      "exampleFoods": [
+        "Riz",
+        "Maïs",
+        "Pommes de terre",
+        "Quinoa",
+        "Légumineuses"
+      ],
+      "photo": "https://www.exemple.com/regimes/images/sansgluten.png"
+    }
+  ]
+}
